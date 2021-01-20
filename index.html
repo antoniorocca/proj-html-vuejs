@@ -36,15 +36,15 @@
                      </div>
                      <div id="menu-nav" class="d-flex">
                          <ul class="d-flex">
-                             <li class="d-flex"> Home <i class="fas fa-chevron-down ml-10"></i></li>
-                             <li class="d-flex"> Shop <i class="fas fa-chevron-down ml-10"></i></li>
-                             <li class="d-flex"> Products <i class="fas fa-chevron-down ml-10"></i></li>
-                             <li class="d-flex"> Categories <i class="fas fa-chevron-down ml-10"></i></li>
-                             <li class="d-flex"> News </li>
-                             <li class="d-flex"> Elements <i class="fas fa-chevron-down ml-10"></i></li> 
-                         </ul>
-                         <button id="shop-now" class="mr-20"><strong>SHOP NOW!</strong> </button>
-                         <i class="fas fa-search"></i>
+                             <li class="d-flex mr-20"> Home <i class="fas fa-chevron-down ml-10"></i></li>
+                             <li class="d-flex mr-20"> Shop <i class="fas fa-chevron-down ml-10"></i></li>
+                             <li class="d-flex mr-20"> Products <i class="fas fa-chevron-down ml-10"></i></li>
+                             <li class="d-flex mr-20"> Categories <i class="fas fa-chevron-down ml-10"></i></li>
+                             <li class="d-flex mr-20"> News </li>
+                             <li class="d-flex mr-20"> Elements <i class="fas fa-chevron-down ml-10"></i></li>
+                             <li class="d-flex"><button id="shop-now" class="d-flex mr-20"><strong>SHOP NOW!</strong> </button></li>
+                             <li class="d-flex"><i class="fas fa-search d-flex"></i></li>
+                         </ul>     
                      </div>
                  </div>
              </nav>
@@ -66,33 +66,133 @@
      <!-- Inizio main -->
      <main>
          <!-- Inizio section Featured Products -->
-         <section>
+         <section id="featured-products">
              <!-- Parte1 -->
-             <h1>Featured Products</h1>
-             <div>
-            
+             <div class="h3-cont d-flex">
+                 <div class="h3-sect d-flex"><h3>Featured Products</h3></div>
+             </div>
+             <div class="h3-p d-flex"><p>Must have products from our top sellers</p></div>
+             <div id="select-products" class="d-flex">
+                 <ul class="d-flex">
+                     <li id="men" class="d-flex"><strong>Men</strong></li>
+                     <li id="women" class="d-flex"><strong>Women</strong></li>
+                     <li id="accessories" class="d-flex"><strong>Accessories</strong></li>
+                 </ul>
              </div>
              <!-- Parte2 -->
-             <div>
-
+             <div id="featured-cards" class="d-flex">
+                 <div class="card-medium" id="first-card">
+                     <img class="medium-img" src="./imgs/black-elegant-jacket.jpg" alt="">
+                     <h5 class="featured-h5">Black Leather Jacket</h5>
+                     <p class="featured-p">Men, Jackets, Jeans</p>
+                     <div id="price1">
+                         <hr>
+                         <span class="featured-price">$235</span><span class="featured-price">$230</span>
+                     </div>
+                 </div>
+                 <div class="card-medium">
+                     <img class="medium-img" src="./imgs/black-leather-suit.jpg" alt="">
+                     <h5 class="featured-h5">Black Leather Suit</h5>
+                     <p class="featured-p">Men, Jackets</p>
+                     <div>
+                         <span class="featured-price">$176</span>
+                     </div>
+                 </div>
+                 <div class="card-medium">
+                     <img class="medium-img" src="./imgs/blue-jacket.jpg" alt="">
+                     <h5 class="featured-h5">Blue Jacket & Stripe Tee</h5>
+                     <p class="featured-p">Men, Jackets, Suits</p>
+                     <div>
+                         <span class="featured-price">$580</span>
+                     </div>
+                 </div>
+                 <div class="card-medium">
+                     <img class="medium-img" src="./imgs/modern-suit.jpg" alt="">
+                     <h5 class="featured-h5">Modern Black Leather Suit</h5>
+                     <p class="featured-p">Men, Jackets</p>
+                     <div>
+                         <span class="featured-price">$96</span>
+                     </div>
+                 </div>
+             </div>
+             <!-- Parte3 -->
+             <div id="bg-cards" class="d-flex">
+                 <div class="bg-card d-flex" id="bg-card1">
+                     <div class="bg-card-txt">
+                          <h3>Winter Collection</h3>
+                          <p>STYLISH AND WARM</p>
+                          <button>VIEW MORE</button>
+                     </div>
+                 </div>
+                 <div class="bg-card d-flex" id="bg-card2">
+                     <div class="bg-card-txt">
+                         <h3>Spring Collection</h3>
+                         <p>BRIGHT AND COLORFUL</p>
+                         <button>VIEW MORE</button>
+                     </div>
+                 </div> 
+                 <div class="bg-card d-flex" id="bg-card3">
+                     <div class="bg-card-txt">
+                         <h3>Autumn Collection</h3>
+                         <p>RICH AND COMFORTABLE</p>
+                         <button>VIEW MORE</button>
+                     </div>
+                 </div> 
              </div>
          </section>
          <!-- Fine section Featured Products -->
          <!-- Inizio section Best Seller -->
-         <section>
+         <section id="best-seller">
              <!-- Parte1 -->
-             <div>
-
+             <div class="h3-cont d-flex">
+                 <div class="h3-sect d-flex"><h3>Best Seller</h3></div>
+             </div>
+             <div class="h3-p d-flex"><p>Must have products from our top sellers</p></div>
+             <div id="selection-imgs" class="d-flex">
+                 <div class="angle-cont d-flex"><i class="fas fa-angle-left"></i></div>
+                 <div class="selection-img-card">
+                     <img class="sel-img" src="./imgs/spring-dress.jpg" alt="">
+                 </div>
+                 <div class="selection-img-card">
+                     <img class="sel-img" src="./imgs/modern_love_tee.jpg" alt="">
+                 </div>
+                 <div class="selection-img-card">
+                     <img class="sel-img" src="./imgs/women-leather-jacket.jpg" alt="">
+                 </div>
+                 <div class="selection-img-card">
+                     <img class="sel-img" src="./imgs/black-elegant-jacket.jpg" alt="">
+                 </div>
+                 <div class="selection-img-card">
+                     <img class="sel-img" src="./imgs/hipster_black_top.jpg" alt="">
+                 </div>
+                 <div class="angle-cont d-flex"><i class="fas fa-angle-right"></i></div>
              </div>
              <!-- Parte2 -->
-             <div>
-
+             <div id="discount-delivery" class="d-flex">
+                 <div class="maxi-bg-card d-flex" id="maxi-bg-card1">
+                     <div class="maxi-card-txt">
+                         <h3>70% Off</h3>
+                         <p>Vivamus tempor leo lacus, feugiat ut magna aliquam erat.</p>
+                         <button>VIEW MORE</button>
+                     </div>
+                 </div>
+                 <div class="maxi-bg-card d-flex" id="maxi-bg-card2">
+                     <div class="maxi-card-txt">
+                         <h3>Free Shipping</h3>
+                         <p>Vivamus tempor leo lacus, feugiat ut magna aliquam erat.</p>
+                         <button>VIEW MORE</button>
+                     </div>
+                 </div>
              </div>
          </section>
          <!-- Fine section Best Seller -->
          <!-- Inizio section New Arrivals -->
-         <section>
+         <section id="new-arrivals">
              <!-- Parte1 -->
+             <div class="h3-cont d-flex">
+                 <div class="h3-sect d-flex"><h3>New Arrivals</h3></div>
+             </div>
+             <div class="h3-p d-flex"><p>Brand new products from top designers</p></div>
              <div>
 
              </div>
