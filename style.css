@@ -67,7 +67,7 @@ nav {
     align-items: center;
     border-bottom: 2px solid #ececec;
 }
-#social-icons-nav {
+#social-icons-nav i {
     font-size: 18px;
     color: #64686c;
 }
@@ -392,7 +392,7 @@ nav {
 }
 #testimonial {
     margin-top: 70px;
-    height: 450px;
+    height: 400px;
     background-image: url(./imgs/testimonials1-bg.jpg);
     background-repeat: no-repeat;
     background-size: 100%;

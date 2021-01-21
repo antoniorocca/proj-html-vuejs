@@ -1,3 +1,53 @@
+let app1 = new Vue({
+  el:'#app1',
+  data:{
+    socials: [
+      { 
+        social: "fab fa-facebook-f", 
+        link: "https://www.facebook.com", 
+      },
+      { 
+        social: "fab fa-twitter", 
+        link: "https://www.twitter.com", 
+      },
+      { 
+        social: "fab fa-instagram", 
+        link: "https://www.instagram.com", 
+      },
+      {
+        social: "fab fa-youtube", 
+        link: "https://www.youtube.com",
+      },
+    ],
+    logo:'./imgs/logo-nav.png',
+    menuNav: [
+      {
+        text: "Home",
+        icon: "fas fa-chevron-down",
+      },
+      {
+        text: "Shop",
+        icon: "fas fa-chevron-down",
+      },
+      {
+        text: "Products",
+        icon: "fas fa-chevron-down",
+      },
+      {
+        text: "Categories",
+        icon: "fas fa-chevron-down",
+      },
+      {
+        text: "News",
+      },
+      {
+        text: "Elements",
+        icon: "fas fa-chevron-down",
+      },
+    ]
+  }
+});
+
 let app = new Vue({
   el: "#app2",
   data: {
@@ -11,13 +61,16 @@ let app = new Vue({
         "Web: Theme-Fusion.com",
       ],
       socials: [
-        { social: "fab fa-facebook-f", 
+        { 
+          social: "fab fa-facebook-f", 
           link: "https://www.facebook.com", 
         },
-        { social: "fab fa-twitter", 
+        { 
+          social: "fab fa-twitter", 
           link: "https://www.twitter.com", 
         },
-        { social: "fab fa-instagram", 
+        { 
+          social: "fab fa-instagram", 
           link: "https://www.instagram.com", 
         },
         {

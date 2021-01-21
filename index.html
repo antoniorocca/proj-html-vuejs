@@ -13,15 +13,12 @@
      <!-- Inizio header -->
      <header>
          <!-- inizio container1 vue -->
-         <div id="app">
+         <div id="app1">
              <nav>
                  <!-- navbar top -->
                  <div id="top-nav" class="d-flex">
                      <div id="social-icons-nav" class="d-flex">
-                         <i class="fab fa-facebook-f pr-20"></i>
-                         <i class="fab fa-twitter pr-20"></i>
-                         <i class="fab fa-instagram pr-20"></i>
-                         <i class="fab fa-youtube"></i>
+                         <a v-for="icon in socials" :href="icon.link"> <i :class="icon.social" class="mr-20"></i></a>
                      </div>
                      <div id="cart-account" class="d-flex">
                          <span id="shopping-cart" class="d-flex">Shopping Cart</span>
@@ -32,16 +29,14 @@
                  <!-- navbar bottom -->
                  <div id="bottom-nav" class="d-flex">
                      <div id="logo-nav">
-                        <img src="./imgs/logo-nav.png" alt="logo">
+                         <img :src="logo" alt="logo">
                      </div>
                      <div id="menu-nav" class="d-flex">
                          <ul class="d-flex">
-                             <li class="d-flex mr-20"> Home <i class="fas fa-chevron-down ml-10"></i></li>
-                             <li class="d-flex mr-20"> Shop <i class="fas fa-chevron-down ml-10"></i></li>
-                             <li class="d-flex mr-20"> Products <i class="fas fa-chevron-down ml-10"></i></li>
-                             <li class="d-flex mr-20"> Categories <i class="fas fa-chevron-down ml-10"></i></li>
-                             <li class="d-flex mr-20"> News </li>
-                             <li class="d-flex mr-20"> Elements <i class="fas fa-chevron-down ml-10"></i></li>
+                             <li class="d-flex mr-20" v-for="element in menuNav">
+                                 {{element.text}}
+                                 <i class="ml-10" :class="element.icon"></i>
+                             </li>
                              <li class="d-flex"><button id="shop-now" class="d-flex mr-20"><strong>SHOP NOW!</strong> </button></li>
                              <li class="d-flex"><i class="fas fa-search d-flex"></i></li>
                          </ul>     
