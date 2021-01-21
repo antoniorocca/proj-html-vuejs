@@ -337,19 +337,19 @@
                      <li class="title-li d-flex"><span>LATEST REVIEWS</span></li>
                      <li class="spec-li">
                          <div class="spec-li-txt">
-                             <span>Leather Gloves</span><br>
+                             <span>Black Leather Jacket</span><br>
                              <span><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></span><br>
                              <span>by admin</span>    
                          </div>
-                         <img class="spec-li-img" src="./imgs/leather_gloves.jpg" alt="">
+                         <img class="spec-li-img" src="./imgs/black-elegant-jacket.jpg" alt="">
                      </li>
                      <li class="spec-li">
                          <div class="spec-li-txt">
-                             <span>Black Leather Jacket</span><br>
+                             <span>Leather Gloves</span><br>
                              <span><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></span><br>
                              <span>by Beardman</span>
                          </div>
-                         <img class="spec-li-img" src="./imgs/black-elegant-jacket.jpg" alt="">
+                         <img class="spec-li-img" src="./imgs/leather_gloves.jpg" alt="">
                      </li>
                      <li class="spec-li">
                          <div class="spec-li-txt">
@@ -364,7 +364,7 @@
              <!-- Parte3 -->
              <div id="logos-container">
                  <ul id="brand-logos" class="d-flex">
-                     <p id="logos-p"><strong>BRAND LOGOS</strong></p>
+                     <p id="logos-p">BRAND LOGOS</p>
                      <li class="logo-card d-flex">
                          <img src="./imgs/b_logotype_6.png" alt="">
                      </li>
@@ -384,50 +384,72 @@
              </div>
          </section>
          <!-- Fine section From Our Blog -->
+         <!-- Inzio section subscribe -->
+         <section id="subscribe-area" class="d-flex">
+             <div id="sub-part1" class="d-flex"> 
+                 <i class="far fa-envelope mr-20 d-flex"></i>
+                 <h3 id="subscribe-txt">Subscribe now and get special offers</h3>
+             </div>
+             <div>
+                 <input type="text" placeholder="Insert your email" id="email-input">
+                 <button id="send" class="ml-10">SEND</button>
+             </div>
+         </section>
+         <!-- Fine section subscribe -->
      </main>
-     <!-- Fine main -->
-     <!-- inizio container2 vue -->
-     <div>
-         <!-- Inizio footer -->
-         <footer>
-             <!-- inizio footer top -->
-             <div>
-                 <div>
-                     <!-- <p>Subscribe now and get special offers</p> -->
+     <!-- Fine main -->    
+     <!-- Inizio footer -->
+     <footer>
+         <!-- inizio container2 vue -->
+          <div id="app2">         
+             <!-- inizio main footer -->
+             <div id="main-footer" class="d-flex">
+                 <div id="footer-col1">
+                     <img id="footer-logo" :src="col1.logo" alt="">
+                     <div id="social-txt">
+                         <div v-for="contact in col1.contacts">{{contact}}</div>
+                     </div>
+                     <div id="social-footer">
+                         <a v-for="icon in col1.socials" :href="icon.link"> <i class="mr-10" :class="icon.social"> </i></a>
+                     </div>
                  </div>
-                 <div>
-                     <!-- <input type="text" placeholder="Insert your email">
-                     <button>SEND</button> -->
+                  <div id="footer-col2" class="mr-20">
+                     <h5>{{col2.title}}</h5>
+                     <div v-for="element in col2.info" id="cont-col2">
+                         <div class="col2-txt">
+                             <span>{{element.description}}</span><br>
+                             <span> <i v-for="star in 5" class="fas fa-star"></i> </span><br>
+                             <span class="line-scount"><strong>{{element.discount}}</strong></span> <span> <strong>{{element.price}}</strong></span>
+                         </div>
+                         <img :src="element.picture" alt="">
+                      </div>                        
+                 </div>
+                 <div id="footer-col3" class="mr-20">
+                     <h5>{{col3.title}}</h5>
+                     <div v-for="element in col3.text" id="cont-col3">
+                         <span id="col3-txt"><i class="fas fa-angle-right"></i> {{element}}</span>
+                     </div>
+                 </div>
+                 <div id="footer-col4">
+                     <h5>{{col4.title}}</h5>
+                     <div v-for="element in col4.tags" id="cont-col4">
+                         <span id="col4-txt"><a v-for="tag in element">{{tag}}</a></span>
+                     </div>
                  </div>
              </div>
-             <!-- inizio footer center -->
-             <div>
-                 <div>
-                     <!-- logo, contacts and socials -->
+         </div>
+         <!-- fine container2 vue -->
+         <!-- inizio footer bottom -->
+         <div id="bottom-footer" class="d-flex">
+             <div id="cont-bottom-footer">
+                 <div id="copyright">
+                     <p>&copy; Copyright 2012 - 2020 | Avada Theme by Theme Fusion | All Rights Reserved | Powered by WordPress</p>
                  </div>
-                 <div>
-                     <!-- top rated products -->
-                 </div>
-                 <div>
-                     <!-- recent posts -->
-                 </div>
-                 <div>
-                     <!-- tags -->
-                 </div>
+                 <img src="./imgs/payment_cards_footer.png" alt="">
              </div>
-             <!-- inizio footer bottom -->
-             <div>
-                 <div>
-                     <!-- copyright -->
-                 </div>
-                 <div>
-                     <!-- credit cards -->
-                 </div>
-             </div>
-         </footer>
-         <!-- Fine footer -->
-     </div>
-     <!-- fine container2 vue -->
+         </div>
+     </footer>
+     <!-- Fine footer -->
      <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
      <script src="main.js"></script>
  </body>
